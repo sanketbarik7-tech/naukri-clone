@@ -1,0 +1,126 @@
+.section {
+  background: #f5f5f5;
+  padding: 48px 24px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #121224;
+  margin: 0 0 24px;
+}
+
+.scrollRow {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollRow::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollRow::-webkit-scrollbar-track {
+  background: #e7e7f1;
+  border-radius: 3px;
+}
+
+.scrollRow::-webkit-scrollbar-thumb {
+  background: #b0b6c9;
+  border-radius: 3px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e7e7f1;
+  border-radius: 10px;
+  padding: 24px;
+  min-width: 260px;
+  max-width: 280px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121224;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #474d6a;
+}
+
+.star {
+  color: #f5a623;
+  font-size: 13px;
+}
+
+.reviewCount {
+  color: #717b9e;
+  font-size: 12px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #717b9e;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.viewJobsBtn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 8px 20px;
+  border: 1.5px solid #275df5;
+  border-radius: 20px;
+  background: transparent;
+  color: #275df5;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+}
+
+.viewJobsBtn:hover {
+  background: #275df5;
+  color: #ffffff;
+}

@@ -1,0 +1,210 @@
+.pageWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ===== Header ===== */
+.header {
+  margin-bottom: 24px;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #121224;
+}
+
+.searchInput {
+  width: 320px;
+  padding: 10px 16px;
+  border: 1px solid #e7e7f1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #121224;
+  background: #fff;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #275df5;
+}
+
+/* ===== Filter Tabs ===== */
+.filterTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.filterTab {
+  padding: 8px 18px;
+  border: 1px solid #e7e7f1;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 13px;
+  color: #474d6a;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.filterTab:hover {
+  border-color: #275df5;
+  color: #275df5;
+}
+
+.filterTabActive {
+  background: #275df5;
+  color: #fff;
+  border-color: #275df5;
+}
+
+.filterTabActive:hover {
+  background: #1a4fd6;
+  color: #fff;
+}
+
+/* ===== Company Grid ===== */
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===== Company Card ===== */
+.companyCard {
+  background: #fff;
+  border: 1px solid #e7e7f1;
+  border-radius: 10px;
+  padding: 24px;
+  transition: box-shadow 0.2s;
+}
+
+.companyCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.logoEmoji {
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.companyInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121224;
+  margin-bottom: 2px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #474d6a;
+}
+
+.ratingStar {
+  color: #f5a623;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tag {
+  padding: 3px 10px;
+  background: #f0f0f5;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #474d6a;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #717b9e;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.description {
+  font-size: 13px;
+  color: #717b9e;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.activeJobs {
+  font-size: 13px;
+  font-weight: 600;
+  color: #275df5;
+  margin-bottom: 16px;
+}
+
+.viewJobsBtn {
+  display: inline-block;
+  padding: 8px 24px;
+  background: #275df5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.viewJobsBtn:hover {
+  background: #1a4fd6;
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #717b9e;
+  font-size: 15px;
+}

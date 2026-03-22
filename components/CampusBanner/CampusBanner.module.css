@@ -1,0 +1,131 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 15px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 32px;
+  position: relative;
+  border: 1px solid #e7e7f1;
+  overflow: hidden;
+}
+
+.launchedBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f05537;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 14px 4px 14px;
+  border-radius: 0 0 0 10px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.logoMain {
+  font-size: 22px;
+  font-weight: 700;
+  color: #275df5;
+  line-height: 1.2;
+}
+
+.logoCampus {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f05537;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.headline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121224;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.subLinks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.subLink {
+  font-size: 13px;
+  color: #474d6a;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.subLink:hover {
+  color: #275df5;
+}
+
+.separator {
+  color: #e7e7f1;
+  font-size: 13px;
+  user-select: none;
+}
+
+.action {
+  flex-shrink: 0;
+}
+
+.exploreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #275df5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.exploreBtn:hover {
+  background: #1a4fd6;
+}
+
+.arrow {
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .action {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --P100: #275df5;
+  --P200: #b0c8ff;
+  --S100: #f05537;
+  --S200: #ffbfad;
+  --N100: #fff;
+  --N200: #fff;
+  --N300: #f7f7f9;
+  --N400: #e7e7f1;
+  --N500: #979ec2;
+  --N600: #717b9e;
+  --N700: #474d6a;
+  --N800: #121224;
+  --I100: #f04141;
+  --I200: #47b749;
+  --I300: #fdaa29;
+  --I400: #8951ff;
+  --A100: #ffedf2;
+  --A200: #efedff;
+  --A300: #ecf5ff;
+  --A400: #fff3dd;
+  --A500: #ffedf2;
+  --D100: #0d1734;
+  --D200: #35063e;
+  --background: #f5f5f5;
+  --border: 1px solid #e7e7f1;
+  --br10: 10px;
+  --box-shadow1: 0px 6px 12px rgba(30, 10, 58, 0.04);
+  --box-shadow2: 0px 6px 25px rgba(30, 10, 58, 0.08);
+  --blue2: #4777fe;
+  --orange2: #fc7358;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--N800);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+}
+
+input, select, textarea {
+  font-family: var(--font-family);
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--N800);
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 32px;
+}
+
+.card {
+  background: var(--N100);
+  border-radius: var(--br10);
+  border: var(--border);
+  box-shadow: var(--box-shadow1);
+  padding: 20px;
+}
+
+.btn-primary {
+  background: var(--P100);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1a4fd4;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--P100);
+  border: 1px solid var(--P100);
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--P100);
+  color: #fff;
+}

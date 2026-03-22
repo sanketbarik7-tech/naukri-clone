@@ -1,0 +1,193 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  padding: 40px 16px;
+  background: #f5f5f5;
+}
+
+.card {
+  width: 440px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logoText {
+  font-size: 28px;
+  font-weight: 800;
+  color: #275df5;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #121224;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #121224;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e7e7f1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #121224;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #275df5;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #275df5;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgotLink {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #275df5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 14px;
+  background: #275df5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.loginBtn:hover {
+  background: #1a4fd6;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #e7e7f1;
+}
+
+.dividerText {
+  padding: 0 16px;
+  font-size: 13px;
+  color: #717b9e;
+}
+
+.otpBtn {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #275df5;
+  border: 1px solid #275df5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 12px;
+}
+
+.otpBtn:hover {
+  background: #eef2ff;
+}
+
+.googleBtn {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #121224;
+  border: 1px solid #e7e7f1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.googleBtn:hover {
+  background: #f5f5f5;
+}
+
+.googleIcon {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.registerLink {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 14px;
+  color: #474d6a;
+}
+
+.registerLink a {
+  color: #275df5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,199 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 15px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #121224;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.tab {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #e7e7f1;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #474d6a;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  border-color: #275df5;
+  color: #275df5;
+}
+
+.tabActive {
+  composes: tab;
+  background: #275df5;
+  border-color: #275df5;
+  color: #fff;
+}
+
+.tabActive:hover {
+  background: #1a4fd6;
+  border-color: #1a4fd6;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.companyCard {
+  background: #fff;
+  border: 1px solid #e7e7f1;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.companyCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.companyLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.companyInfo {
+  min-width: 0;
+}
+
+.companyName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121224;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.star {
+  color: #f5a623;
+  font-size: 13px;
+}
+
+.ratingValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: #121224;
+}
+
+.reviewCount {
+  font-size: 12px;
+  color: #717b9e;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 11px;
+  color: #474d6a;
+  background: #f5f5f5;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.industry {
+  font-size: 12px;
+  color: #717b9e;
+  margin: 0;
+  margin-top: auto;
+}
+
+.viewAll {
+  display: flex;
+  justify-content: center;
+}
+
+.viewAllLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #275df5;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.viewAllLink:hover {
+  color: #1a4fd6;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
